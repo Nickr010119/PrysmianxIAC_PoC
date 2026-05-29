@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Evaluaciones - Prysmian & IAC</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Glows for Premium Aesthetics -->
+    <div class="bg-glow bg-glow-prysmian"></div>
+    <div class="bg-glow bg-glow-iac"></div>
+
+    <div class="app-container">
+        <!-- Floating Navigation Header -->
+        <header class="main-header animate-fade-in">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="assets/logo_prysmian.png" alt="Prysmian Group Logo" class="brand-logo logo-prysmian">
+                    <div class="logo-divider"></div>
+                    <img src="assets/logo_iac.png?v=2" alt="IAC Logo" class="brand-logo logo-iac">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Title Section -->
+            <section class="hero-section text-center animate-slide-up" style="--delay: 1;">
+                <h1 class="main-title">Portal de Diagnóstico & Competencias</h1>
+                <p class="subtitle">Evaluaciones digitales en colaboración entre <strong>Prysmian Group</strong> e <strong>IAC</strong>. Escanea el código QR desde tu celular o accede directamente mediante los enlaces interactivos.</p>
+            </section>
+
+            <!-- Diagnostic Cards Grid -->
+            <section class="cards-grid animate-slide-up" style="--delay: 2;">
+                <!-- Card 1: Diagnostic General -->
+                <div class="test-card card-prysmian" id="card-test-1">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <span class="card-badge badge-prysmian"><i class="fa-solid fa-building-shield"></i> Diagnóstico General</span>
+                            <h2 class="card-title">Test de Diagnóstico General Corporativo</h2>
+                            <p class="card-description">Evaluación corporativa general diseñada para medir y estructurar el punto de partida en competencias clave.</p>
+                        </div>
+                        
+                        <div class="qr-container">
+                            <div class="qr-wrapper" onclick="openLightbox('assets/qr_test1.png', 'Test de Diagnóstico General Corporativo')">
+                                <img src="assets/qr_test1.png" alt="Código QR Test de Diagnóstico General" class="qr-image">
+                                <div class="qr-overlay">
+                                    <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar</span>
+                                </div>
+                            </div>
+                            <p class="qr-caption"><i class="fa-solid fa-camera"></i> Escanea para realizar en tu celular</p>
+                        </div>
+
+                        <div class="link-section">
+                            <div class="short-link-container">
+                                <span class="link-label">Enlace recortado:</span>
+                                <div class="short-link-box">
+                                    <span class="short-url">forms.office.com/r/gXU3yM9NkT</span>
+                                    <button class="btn-copy" onclick="copyToClipboard('https://forms.office.com/r/gXU3yM9NkT', this)" aria-label="Copiar enlace del Test 1">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="https://forms.office.com/r/gXU3yM9NkT" target="_blank" rel="noopener noreferrer" class="btn-primary btn-prysmian">
+                                <span>Realizar Test</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Competencias Digitales -->
+                <div class="test-card card-iac" id="card-test-2">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <span class="card-badge badge-iac"><i class="fa-solid fa-laptop-code"></i> Área Operativa</span>
+                            <h2 class="card-title">Test 2: Competencias Digitales - Básico</h2>
+                            <p class="card-description">Evaluación enfocada en medir habilidades digitales fundamentales para los equipos operativos del sector.</p>
+                        </div>
+                        
+                        <div class="qr-container">
+                            <div class="qr-wrapper" onclick="openLightbox('assets/qr_test2.png', 'Test 2: Competencias Digitales Nivel Básico')">
+                                <img src="assets/qr_test2.png" alt="Código QR Test de Competencias Digitales" class="qr-image">
+                                <div class="qr-overlay">
+                                    <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar</span>
+                                </div>
+                            </div>
+                            <p class="qr-caption"><i class="fa-solid fa-camera"></i> Escanea para realizar en tu celular</p>
+                        </div>
+
+                        <div class="link-section">
+                            <div class="short-link-container">
+                                <span class="link-label">Enlace recortado:</span>
+                                <div class="short-link-box">
+                                    <span class="short-url">forms.office.com/r/6ydsVtE0TE</span>
+                                    <button class="btn-copy" onclick="copyToClipboard('https://forms.office.com/r/6ydsVtE0TE', this)" aria-label="Copiar enlace del Test 2">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="https://forms.office.com/r/6ydsVtE0TE" target="_blank" rel="noopener noreferrer" class="btn-primary btn-iac">
+                                <span>Realizar Test</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer animate-fade-in">
+            <p>&copy; 2026 Prysmian Group &amp; IAC. Todos los derechos reservados.</p>
+            <p class="footer-note">Desarrollado con altos estándares de usabilidad, accesibilidad y diseño responsive.</p>
+        </footer>
+    </div>
+
+    <!-- Lightbox Modal for QR Codes -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content-wrapper" onclick="event.stopPropagation()">
+            <img class="lightbox-img" id="lightbox-img" src="" alt="Código QR Ampliado">
+            <h3 class="lightbox-title" id="lightbox-title"></h3>
+            <p class="lightbox-desc">Puedes escanear directamente este código QR con la cámara de tu celular.</p>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
